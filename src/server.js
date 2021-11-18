@@ -19,8 +19,6 @@ app.use(cors());
 app.use(userRouter);
 //comes from route file
 
-
-
 app.get("/health", (req,res) => {
     res.send({ messages: "Servers up" })
 });
