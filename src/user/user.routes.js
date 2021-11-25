@@ -7,8 +7,8 @@ userRouter.post("/user", hashPassword, addUser); //define a route. to access the
 //it will run addUser function if endpoint is /user
 
 userRouter.post("/login", comparePasswords, logIn) //compares the raw password and the hashed password for user to log in
-userRouter.put("/update", updateUser)
-userRouter.delete("/user/:username", deleteUser)
+// userRouter.put("/update", updateUser)
+// userRouter.delete("/user/:username", deleteUser)
 
 userRouter.get("/token", tokenAuth,  logIn)
 module.exports = userRouter; 
